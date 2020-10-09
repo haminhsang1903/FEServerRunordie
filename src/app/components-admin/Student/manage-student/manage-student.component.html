@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Điểm danh</title>
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/FPT_Polytechnic.png" height=55px width=160px/>
+            </div>
+            <ul class="list-unstyled">
+                <li class="sidenav" >
+                    <a class="dropdown-btn dropdown-toggle" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn2.iconfinder.com/data/icons/education-549/48/20-256.png" height="18" width="18"/>&nbsp;&nbsp;&nbsp;&nbsp;Quản lí thông tin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                     <ul class="dropdown-container" id="drop">
+                        <li><a href="#" [routerLink]="['/admin/manage-student']">Sinh viên</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-teacher']">Giảng viên</a></li>
+                     </ul>
+                </li>
+                <li class="sidenav" >
+                    <a class="dropdown-btn dropdown-toggle" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn4.iconfinder.com/data/icons/online-courses-outline/64/course_online-256.png" height="18" width="18"/>&nbsp;&nbsp;&nbsp;&nbsp;Quản lí lớp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                     <ul class="dropdown-container" id="drop">
+                        <li><a href="#" [routerLink]="['/admin/manage-course']">Khóa học</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-nominalclass']">Lớp học(DN)</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-class']">Lớp học</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-semester']">Học kỳ</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-major']">Ngành học</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-subject']">Môn học</a></li>
+                        <li><a href="#" [routerLink]="['/']">Điểm danh</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-room']">Phòng học</a></li>
+                        <li><a href="#" [routerLink]="['/']">Lịch học</a></li>
+                     </ul>
+                </li>
+                <li class="sidenav" >
+                    <a class="dropdown-btn dropdown-toggle" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn0.iconfinder.com/data/icons/time-calendar/24/time_event_calendar_check_attend-256.png" height="18" width="18"/>&nbsp;&nbsp;&nbsp;&nbsp;Quản lí bài viết  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                     <ul class="dropdown-container" id="drop">
+                        <li><a href="#" [routerLink]="['/admin/manage-category']">Chuyên mục</a></li>
+                        <li><a href="#" [routerLink]="['/admin/manage-post']">Bài viết</a></li>
+                     </ul>
+                </li>
+
+                <li>
+                    <a [routerLink]="['/']">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn2.iconfinder.com/data/icons/sports-and-games-vol-02/32/score-scorecard-card-game-mark-256.png" height="18" width="18"/>&nbsp;&nbsp;&nbsp;&nbsp;Quản lí điểm sinh viên</a>
+                </li>
+                
+                <li class="sidenav" >
+                    <a class="dropdown-btn dropdown-toggle" data-toggle="dropdown">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn1.iconfinder.com/data/icons/digital-processing-4/64/9-256.png" height="18" width="18"/>&nbsp;&nbsp;&nbsp;&nbsp;Thống kê &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                     <ul class="dropdown-container" id="drop">
+                        <li><a href="#" [routerLink]="['/student/semester-score']">Đánh giá giảng viên</a></li>
+                        <li><a href="#" [routerLink]="['/student/history']">Thành tích sinh viên</a></li>
+                     </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="navnav">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="navbutton">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">
+
+                <div class="main">
+                     <div class="main1"><br>
+                        
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#home">CẬP NHẬT</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">QUẢN LÍ DANH SÁCH</a>
+                            </li>
+                            
+                          </ul>
+
+                          <div class="tab-content">
+                            <div id="home" class="container tab-pane active"><br>
+
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <form action="/action_page.php">
+                                                <div class="form-group">
+                                                  <label for="usr">Mã sinh viên</label>
+                                                  <input type="text" class="form-control" id="id" name="id" [(ngModel)]="student.id_students" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Tên sinh viên</label>
+                                                  <input type="text" class="form-control" id="name" name="name" [(ngModel)]="student.name" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Hình ảnh</label>
+                                                  <input type="text" class="form-control" id="img" name="img" [(ngModel)]="student.avt" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Tên lớp(DN)</label>
+                                                    <select class="form-control" id="sel1" [(ngModel)]="nominalClasses" [ngModelOptions]="{standalone: true}">
+                                                      <option *ngFor="let item of nominalClasses" [ngValue]="item">{{item.name}}</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Ngành học</label>
+                                                    <select class="form-control" id="major" [(ngModel)]="majors" [ngModelOptions]="{standalone: true}">
+                                                      <option *ngFor="let item of majors" [ngValue]="item">{{item.name}}</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Ngày sinh</label>
+                                                  <input type="date" class="form-control" id="birthday" name="birthday" [(ngModel)]="student.birthday" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pwd">Giới tính</label>
+                                                    <select class="form-control" id="gender" [(ngModel)]="student.gender" [ngModelOptions]="{standalone: true}">
+                                                        <option value="true">Nam</option>
+                                                        <option value="false">Nữ</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Email</label>
+                                                  <input type="text" class="form-control" id="email" name="email" [(ngModel)]="student.email" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Địa chỉ</label>
+                                                  <input type="text" class="form-control" id="address" name="address" [(ngModel)]="student.address" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="pwd">Chứng minh nhân dân</label>
+                                                  <input type="text" class="form-control" id="identity_card" name="identity_card" [(ngModel)]="student.identity_card" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                  <label for="pwd">Trạng thái</label>
+                                                  <input type="text" class="form-control" id="status" name="status" [(ngModel)]="student.status" [ngModelOptions]="{standalone: true}">
+                                                </div>
+                                                <br>
+                                                <button type="submit" class="btn btn-primary" (click)="onAddStudent()">Lưu mới</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <button type="submit" class="btn btn-primary">Làm mới</button>
+                                             </form>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+
+                            <div id="menu1" class="container tab-pane fade"><br>
+                              <table class="table table-striped" style="font-size: 10px">
+              							    <thead>
+              							      <tr>
+              							        <td>Mã sinh viên</td>
+              							        <td>Tên sinh viên</td>
+              							        <td>Tên lớp</td>
+              							        <td>Ngành học</td>
+              							        <td>Ngày sinh</td>
+              							        <td>Giới tính</td>
+              							        <td>Email</td>
+              							        <td>Địa chỉ</td>
+              							        <td>CMND</td>
+              							        <td>Action</td>
+              							      </tr>
+              							    </thead>
+              							    <tbody>
+              							      <tr *ngFor="let item of students" >
+              							        <td>{{item.id_students}}</td>
+              							        <td>{{item.name}}</td>
+                                    <td>{{item.id_nominalclass.id_nominalclass}}</td>
+                                    <td>{{item.id_major.id_major}}</td>
+                                    <td>{{item.birthday | date: "dd/MM/yyyy"}}</td>
+                                    <td>{{item.gender ? 'Nam' : 'Nữ' }}</td>
+                                    <td>{{item.email}}</td>
+                                    <td>{{item.address}}</td>
+                                    <td>{{item.identity_card}}</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" herf="#home" (click)="onEditStudent(item)">Edit</button>
+                                        <button type="button" class="btn btn-danger" [style.margin-left.px]="5"(click)="onDeleteStudent(item.id_students)">Delete</button>
+                                    </td>
+              							      </tr>
+              							      
+              							    </tbody>
+              							  </table>
+                            </div>
+                          </div>
+                          <br><br>
+                        </div>
+                </div>
+
+			</div>
+
+            <div class="footer">
+                @Bee.Edu.vn
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>

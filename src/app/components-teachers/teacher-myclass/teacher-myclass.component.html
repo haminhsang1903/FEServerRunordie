@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Điểm danh</title>
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/FPT_Polytechnic.png" height=55px width=160px/>
+            </div>
+
+            <ul class="list-unstyled">
+                <li>
+                    <a [routerLink]="['/teacher/dashboard']">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/bell-o-128.png" height="15" width="15"/>&nbsp;&nbsp;&nbsp;&nbsp;Bảng điều khiển</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/teacher/myclass']">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.iconfinder.com/data/icons/thin-law-enforcement/24/thin-1606_jury_court_guilty-128.png" height="15" width="15"/>&nbsp;&nbsp;&nbsp;&nbsp;Lớp của tôi</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/teascher/dashboard']">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.iconfinder.com/data/icons/business-set-2-3/25/business-set-2002-128.png" height="15" width="15"/>&nbsp;&nbsp;&nbsp;&nbsp;Lịch</a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <div class="navnav">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="navbutton">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container">
+
+                <div class="main">
+                     <div class="main1"><br>
+                        
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#home">DANH SÁCH THÀNH VIÊN TRONG LỚP</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu1">ĐIỂM DANH</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#menu2">BẢNG ĐIỂM</a>
+                            </li>
+                          </ul>
+
+                          <div class="tab-content">
+                            <div id="home" class="container tab-pane active"><br>
+                            <span>PM14302-WEB209-Xây dưng trang web</span>
+                            <br><br>
+                              <table class="table table-striped">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <td>#</td>
+                                    <td>Mã sinh viên</td>
+                                    <td>Họ và tên</td>
+                                    <td>Email</td>
+                                    <td>Số điện thoại</td>
+                                    <td>Ngày vào lớp</td>
+                                    <td>Trạng thái</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>PC0001</td>
+                                    <td>Nguyên văn a</td>
+                                    <td>a@gmail.com</td>
+                                    <td>094943833</td>
+                                    <td>1/1/2020</td>
+                                    <td>HD</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>PC0002</td>
+                                    <td>Nguyên văn B</td>
+                                    <td>B@gmail.com</td>
+                                    <td>094943833</td>
+                                    <td>1/1/2020</td>
+                                    <td>HD</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <div id="menu1" class="container tab-pane fade"><br>
+                            <span>PM14302-WEB209-Xây dưng trang web</span>
+                            <br><br>
+                              <table class="table table-striped table-hover" style="font-size: 10px">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <td>#</td>
+                                    <td>Mã sinh viên</td>
+                                    <td>Họ và tên</td>
+                                    <td>Buổi 1</td>
+                                    <td>Buổi 2</td>
+                                    <td>Buổi 3</td>
+                                    <td>Buổi 4</td>
+                                    <td>Buổi 5</td>
+                                    <td>Buổi 6</td>
+                                    <td>Buổi 7</td>
+                                    <td>Buổi 8</td>
+                                    <td>Buổi 9</td>
+                                    <td>Buổi 10</td>
+                                    <td>Buổi 11</td>
+                                    <td>Buổi 12</td>
+                                    <td>Buổi 13</td>
+                                    <td>Buổi 14</td>
+                                    <td>Buổi 15</td>
+                                    <td>Buổi 16</td>
+                                    <td>Buổi 17</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>PC001</td>
+                                    <td>Nguyên văn a</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>PC002</td>
+                                    <td>Nguyên văn b</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                    <td>P</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <div id="menu2" class="container tab-pane fade"><br>
+                            <span>PM14302-WEB209-Xây dưng trang web</span>
+                            <br><br>
+                              <table class="table table-striped table-hover" style="font-size: 6.7px">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <td>#</td>
+                                    <td>Mã sinh viên</td>
+                                    <td>Họ và tên</td>
+                                    <td>Lab 1</td>
+                                    <td>Lab 2</td>
+                                    <td>Lab 3</td>
+                                    <td>Lab 4</td>
+                                    <td>Lab 5</td>
+                                    <td>Lab 6</td>
+                                    <td>Lab 7</td>
+                                    <td>Lab 8</td>
+                                    <td>Quiz 1</td>
+                                    <td>Quiz 2</td>
+                                    <td>Quiz 3</td>
+                                    <td>Quiz 4</td>
+                                    <td>Quiz 5</td>
+                                    <td>Quiz 6</td>
+                                    <td>Quiz 7</td>
+                                    <td>Quiz 8</td>
+                                    <td>Đánh giá Assignemt GĐ1</td>
+                                    <td>Đánh giá Assignemt GĐ2</td>
+                                    <td>Document</td>
+                                    <td>Presentation</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>PC001</td>
+                                    <td>Nguyên văn a</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>PC002</td>
+                                    <td>Nguyên văn b</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>9</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            
+                          </div>
+                        </div>
+                    
+                </div>
+
+                
+
+			</div>
+
+            <div class="footer">
+                @Bee.Edu.vn
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        
+    </script>
+</body>
+</html>
+

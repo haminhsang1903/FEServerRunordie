@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Login</title>
+    <style type="text/css">
+
+    </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-6 col-lg-4 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">LOGIN</h4>
+            <form class="form-signin" action="" method="POST" role="form">
+              <!-- <div class="form-group">
+              	<label for="inputEmail">Email Address</label>
+                <input type="email" id="inputEmail" class="form-control"  required autofocus>
+                
+              </div>
+
+              <div class="form-group">
+              	<label for="inputPassword">Password</label>
+                <input type="password" id="inputPassword" class="form-control"  required>
+                
+              </div>
+
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div> -->
+              <div class="form-group">
+                <div class="group">      
+                  <input type="text" required [(ngModel)]="user.username" [ngModelOptions]="{standalone: true}">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+                <div class="group">      
+                  <input type="text" required [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Password</label>
+                </div>
+              </div>
+
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" (click)="onLogin()">Login</button>
+              <hr class="my-4">
+              <span style="margin-left: 90px;">Or Login With</span><br><br>
+              <img style="margin-left: 85px;" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2/128/social-circle-google-plus-2-256.png" height="50" width="50"/>&nbsp;&nbsp;Google<br><br>
+              <span style="margin-left: 90px;">BeeFoly.edu.vn</span>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
